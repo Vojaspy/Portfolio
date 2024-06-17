@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../assets/Logo.png';
 
 const imgStyles = {
-  width: '150px',
+  width: '125px',
   height: 'auto',
 };
 
@@ -13,9 +13,11 @@ const aStyles = {
   color: 'purple',
 };
 
-const sectionStyles = {
-    backgroundColor : 'green',
+const navStyles = {
+    backgroundColor : 'grey',
+    height : '17%',
 };
+
 
 
 const Navbar = () => {
@@ -31,8 +33,8 @@ const Navbar = () => {
   };
 
   return (
-    <section id="mynavbar" >
-      <nav className="navbar navbar-expand-lg navbar-light navbar fixed-top" style={sectionStyles}>
+    <section id="mynavbar">
+      <nav className="navbar navbar-expand-lg navbar-light navbar fixed-top" style={navStyles}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#mynavbar">
             <img src={Logo} style={imgStyles} alt="Logo" />
@@ -78,22 +80,22 @@ const Navbar = () => {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="#projects"
+                  href="#skills"
                   style={aStyles}
                   onClick={handleLinkClick}
                 >
-                  Projects
+                  Skills
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="#skills"
+                  href="#projects"
                   style={aStyles}
                   onClick={handleLinkClick}
                 >
-                  Skills
+                  Projects
                 </a>
               </li>
               <li className="nav-item">
@@ -127,3 +129,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

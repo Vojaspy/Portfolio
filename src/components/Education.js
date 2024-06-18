@@ -1,8 +1,10 @@
 
 const sectionStyles = {
-    paddingTop :'150px',
+    paddingTop :'125px',
+    // paddingTop : '15px',
     paddingLeft : '25px',
     paddingRight : '25px',
+    backgroundColor : 'black',
 };
 
 

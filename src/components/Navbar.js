@@ -10,12 +10,17 @@ const aStyles = {
   fontSize: '24px',
   margin: '0 30px',
   hover: 'underline',
-  color: 'purple',
+  color: 'brown',
 };
 
 const navStyles = {
-    backgroundColor : 'grey',
+    // backgroundColor: 'rgba(255, 255, 255, 0.3)', // Semi-transparent background
+  backdropFilter: 'blur(1px)', // Blur effect
     height : '17%',
+    // filter: 'brightness(1.1)',
+    border : 'rounded',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.00006)', // Subtle shadow for depth
+    backdropFilter : 'brightness(98%)',
 };
 
 

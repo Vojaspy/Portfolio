@@ -2,7 +2,6 @@ import { ReactTyped } from "react-typed";
 import backImage from "../assets/back2.jpg";
 
 const sectionStyles = {
-
   paddingTop: "175px",
   paddingLeft: "25px",
   paddingRight: "25px",
@@ -13,43 +12,30 @@ const sectionStyles = {
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center center",
   backgroundAttachment: "fixed",
-
-  '@media (max-width: 768px)': {
-    paddingTop: "100px",
-    paddingLeft: "15px",
-    paddingRight: "15px",
-  },
 };
 
 const textStyles = {
   fontSize: "50px",
   fontWeight: "bold",
+  textAlign: "center",
+};
+
+const nameStyles = {
+  color: "teal",
+  display : 'inline',
 };
 
 const typeStyles = {
   fontSize: "30px",
   marginTop: "25px",
-  // display : 'block',
-};
-
-const connectLinks = {
-  marginTop: "40px",
-  fontSize: "35px",
-  // marginRight : 'auto',
-  // marginLeft : 'auto',
-  // width : '50%',
-};
-
-const aStyles = {
-  textDecoration: "none",
-  fontSize: "20px",
-  color: "grey",
+  textAlign: "center",
 };
 
 const aboutMeStyles = {
   marginTop: "3%",
+  fontSize: "25px",
+  textAlign: "center",
 };
-
 
 const bitStyles = {
   fontSize: "20px",
@@ -57,25 +43,47 @@ const bitStyles = {
   textAlign: "center",
   maxWidth: "800px",
   lineHeight: "1.5",
+  paddingLeft: "10px",
+  paddingRight: "10px",
 };
 
+const responsiveStyles = `
+  @media (max-width: 768px) {
+    .textStyles {
+      font-size: 35px !important;
+    }
+    .typeStyles {
+      font-size: 20px !important;
+      margin-top: 15px !important;
+    }
+    .aboutMeStyles {
+      font-size: 20px !important;
+    }
+    .bitStyles {
+      font-size: 16px !important;
+      margin-top: 10px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .sectionStyles {
+      padding-top: 100px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+`;
 
 const Home = () => {
   return (
     <section id="home" style={sectionStyles}>
+      <style>{responsiveStyles}</style>
       <div className="row">
         <div className="">
-          <h1
-            style={textStyles}
-            className="d-flex justify-content-center align-items-center"
-          >
+          <h1 style={textStyles} className="textStyles d-flex justify-content-center align-items-center">
             Hello! I am Vojas Gonnade
           </h1>
           
-          <h3
-            style={typeStyles}
-            className="d-flex justify-content-center align-items-center"
-          >
+          <h3 style={typeStyles} className="typeStyles d-flex justify-content-center align-items-center">
             I am a {""}
             <ReactTyped
               className="mx-2"
@@ -93,15 +101,12 @@ const Home = () => {
               showCursor={true}
             />
           </h3>
-          <div
-            className="d-flex justify-content-center align-items-center"
-            style={aboutMeStyles}
-          >
-            <span style={{ fontSize: "25px" }}>
+          <div className="d-flex justify-content-center align-items-center aboutMeStyles" style={aboutMeStyles}>
+            <span>
               A Bit About <span style={{ color: "teal" }}>Me</span>
             </span>
           </div>
-          <div className="d-flex justify-content-center align-items-center mx-auto" style={bitStyles}>
+          <div className="d-flex justify-content-center align-items-center mx-auto bitStyles" style={bitStyles}>
             Passionate web developer with a keen interest in competitive coding
             and data science. Proficient in front-end web technologies, I thrive
             in creating user-centric web experience. In addition to my web

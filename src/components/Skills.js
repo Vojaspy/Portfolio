@@ -1,11 +1,13 @@
 import { ReactTyped } from "react-typed";
 import backImage from "../assets/back2.jpg";
+import Tableau from '../assets/Tableau.png';
+import PowerBI from '../assets/powerBI.png';
 
 const sectionStyles = {
   paddingTop: "125px",
   paddingLeft: "25px",
   paddingRight: "25px",
-  backgroundColor: "#d9d9d9",
+  backgroundColor: "#f0f6f6",
 };
 
 const headingStyles = {
@@ -129,11 +131,13 @@ const Skills = () => {
             {/* Add more technologies as needed */}
             <div style={imgContainerStyles}>
                 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/minitab/minitab-original.svg" className="img-fluid" style={imgStyles}/>
+            {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/minitab/minitab-original.svg" className="img-fluid" style={imgStyles}/> */}
           
           
+            <img src={Tableau} className="img-fluid"style={imgStyles}></img>
+            <img src={PowerBI} className="img-fluid"style={imgStyles}></img>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="img-fluid" style={imgStyles}/>
-          
+
             </div>
           </div>
         </div>

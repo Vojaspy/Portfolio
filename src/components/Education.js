@@ -4,7 +4,7 @@ const sectionStyles = {
     // paddingTop : '15px',
     paddingLeft : '25px',
     paddingRight : '25px',
-    backgroundColor : '#e6e6e6',
+    // backgroundColor : '#f0f6f6',
     // height :'100vh',
     // marginBottom : '50px'
 };

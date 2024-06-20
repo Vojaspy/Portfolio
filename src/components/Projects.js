@@ -6,7 +6,7 @@ const sectionStyles = {
     paddingLeft: "25px",
     paddingRight: "25px",
     // paddingBottom : '125px',
-    backgroundColor: "#d9d9d9",
+    // backgroundColor: "#f0f6f6",
 }
 
 

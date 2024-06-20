@@ -1,11 +1,14 @@
-import { CCircle,Linkedin,Github,Instagram,TelephoneFill,Envelope } from "react-bootstrap-icons";
+import { CCircle,Linkedin,Github,Instagram,TelephoneFill,Envelope, Download} from "react-bootstrap-icons";
+import Resume from '../assets/VojasGonnadeResume.pdf';
+
 
 const sectionStyles = {
   paddingTop: "125px",
   paddingLeft: "25px",
   paddingRight: "25px",
-  backgroundColor: "#e6e6e6",
-  paddingBottom : '25px'
+  // backgroundColor: "#e6e6e6",
+  paddingBottom : '25px',
+  // backgroundColor : '#f0f6f6',
 };
 
 const headingStyles = {
@@ -86,7 +89,7 @@ const Contact = () => {
                 />
               </div>
               <div
-                className="d-flex justify-content-center"
+                className="d-flex justify-content-around"
                 style={{ margin: "20px 0px" }}
               >
                 <button
@@ -96,10 +99,17 @@ const Contact = () => {
                 >
                   Submit
                 </button>
+                {/* <a href={Resume} download style={{color:'black' ,textDecoration:'none',fontSize:'20px'}}>Download my resume here <Download/></a> */}
+
               </div>
             </form>
           </div>
         </div>
+
+        {/* <div className="d-flex justify-content-center" style={{marginBottom:'20px'}}>
+          <a href={Resume} download style={{color:'black' ,textDecoration:'none',fontSize:'20px'}}>Download my resume here <Download/></a>
+        </div> */}
+        
         <div>
             <h4>Alternatively you can contact me on: </h4>
             <ul className="d-flex justify-content-start flex-wrap" >

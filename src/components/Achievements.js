@@ -8,7 +8,8 @@ const sectionStyles = {
   paddingTop: "125px",
   paddingLeft: "25px",
   paddingRight: "25px",
-  backgroundColor: "#e6e6e6",
+  backgroundColor: "#f0f6f6",
+  // backgroundColor:'#01a6b0'
 };
 
 const headingStyles = {

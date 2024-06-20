@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/Logo.png';
+import Resume from '../assets/VojasGonnadeResume.pdf';
 
 const imgStyles = {
   width: '125px',
@@ -123,6 +124,18 @@ const Navbar = () => {
                   onClick={handleLinkClick}
                 >
                   Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href={Resume}
+                  style={aStyles}
+                  onClick={handleLinkClick}
+                  download
+                >
+                  Resume
                 </a>
               </li>
             </ul>

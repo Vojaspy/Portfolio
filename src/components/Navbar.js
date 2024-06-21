@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../assets/Logo.png';
 import Resume from '../assets/VojasGonnadeResume.pdf';
+import {Download} from 'react-bootstrap-icons';
 
 const imgStyles = {
   width: '125px',
@@ -135,7 +136,7 @@ const Navbar = () => {
                   onClick={handleLinkClick}
                   download
                 >
-                  Resume
+                  Resume <Download/>
                 </a>
               </li>
             </ul>

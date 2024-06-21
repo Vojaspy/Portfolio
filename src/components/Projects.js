@@ -1,42 +1,246 @@
-
+import back1 from "../assets/back1.jpg";
 
 const sectionStyles = {
-    paddingTop: "125px",
-    // paddingTop : '15px',
-    paddingLeft: "25px",
-    paddingRight: "25px",
-    // paddingBottom : '125px',
-    // backgroundColor: "#f0f6f6",
-}
+  paddingTop: "125px",
+  paddingLeft: "25px",
+  paddingRight: "25px",
+};
 
+const headingStyles = {
+  color: "teal",
+};
+
+const infoStyles = {
+  fontSize: "20px",
+};
 
 const Projects = () => {
-    return ( 
-        <section id="projects" style ={sectionStyles}>
-            <h1>Projects</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  return (
+    <section id="projects" style={sectionStyles}>
+      <h1 style={headingStyles}>Projects</h1>
+      <h6>* Hover over cards to get more information about the projects</h6>
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-around">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+            <div className="card">
+              <div className="card-img-container">
+                <img src={back1} className="card-img-top" alt="..." />
+                <div style={{ padding: "20px" }}>
+                  <h5 className="card-title">Weather APP</h5>
+                  <div
+                    className="d-flex justify-content-evenly flex-wrap"
+                    style={{ marginTop: "20px" }}
+                  >
+                    <button className="btn border rounded-4">HTML</button>
+                    <button className="btn border rounded-4">CSS3</button>
+                    <button className="btn border rounded-4">
+                      Bootstrap 5
+                    </button>
+                    <button className="btn border rounded-4">JavaScript</button>
+                  </div>
+                </div>
 
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                <div className="card-img-overlay">
+                  <div className="overlay-content">
+                    <p style={infoStyles}>
+                      This Weather App provides real-time weather information
+                      for a given location. It fetches data from a reliable
+                      weather API and presents it in a user-friendly interface.
+                      Users can quickly check the current weather conditions,
+                      temperature, wind speed,visibility and pressure for any
+                      desired location.
+                    </p>
+                    <a
+                      href="https://github.com/Vojaspy/Project1---Weather-APP"
+                      className="btn btn-primary"
+                      target="_blank"
+                      style={{ marginTop: "20px" }}
+                    >
+                      To Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit. Morbi fringilla convallis sapien. Suspendisse potenti. Ut a eros at ligula vehicula pretium. Maecenas feugiat pede vel risus. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+            <div className="card">
+              <div className="card-img-container">
+                <img src={back1} className="card-img-top" alt="..." />
+                <div style={{ padding: "20px" }}>
+                  <h5 className="card-title">This Portfolio</h5>
+                  <div
+                    className="d-flex justify-content-evenly flex-wrap"
+                    style={{ marginTop: "20px" }}
+                  >
+                    <button className="btn border rounded-4">ReactJS</button>
+                    <button className="btn border rounded-4">CSS3</button>
+                    <button className="btn border rounded-4">
+                      Bootstrap 5
+                    </button>
+                    <button className="btn border rounded-4">Netlify</button>
+                  </div>
+                </div>
+                <div className="card-img-overlay">
+                  <div className="overlay-content">
+                    <p style={infoStyles}>
+                      Welcome to my portfolio! This curated collection showcases
+                      my passion and expertise as a Computer Science student.
+                      Explore a diverse array of projects highlighting my skills
+                      in web developement and data science. Each project
+                      reflects my commitment to excellence and innovation. Dive
+                      in to see how I bring creativity and technical prowess
+                      together to solve challenges and deliver impactful
+                      solutions.
+                    </p>
+                    <a
+                      href="https://github.com/Vojaspy/Portfolio"
+                      className="btn btn-primary"
+                      target="_blank"
+                      style={{ marginTop: "20px" }}
+                    >
+                      To Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+            <div className="card">
+              <div className="card-img-container">
+                <img src={back1} className="card-img-top" alt="..." />
+                <div style={{ padding: "20px" }}>
+                  <h5 className="card-title">
+                    Identify Diseases in Tea Leaves
+                  </h5>
+                  <div
+                    className="d-flex justify-content-evenly flex-wrap"
+                    style={{ marginTop: "20px" }}
+                  >
+                    <button className="btn border rounded-4">Python</button>
+                    <button className="btn border rounded-4">Tensorflow</button>
+                    <button className="btn border rounded-4">Keras</button>
+                    <button className="btn border rounded-4">Kaggle</button>
+                  </div>
+                </div>
+                <div className="card-img-overlay">
+                  <div className="overlay-content">
+                    <p style={infoStyles}>
+                      Discover my deep learning project dedicated to identifying
+                      diseases in tea leaves with an impressive 80% accuracy.
+                      Utilizing powerful models such as VGG16, ResNet-50, and
+                      EfficientNet, this project showcases neural network
+                      techniques applied to agricultural diagnostics. Witness
+                      how these models effectively classify and diagnose
+                      diseases affecting tea plants, demonstrating their
+                      reliability and precision in real-world scenarios.
+                    </p>
+                    <a
+                      href="https://github.com/Vojaspy/Deep-Learning-Project"
+                      className="btn btn-primary"
+                      target="_blank"
+                      style={{ marginTop: "20px" }}
+                    >
+                      To Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit. Morbi fringilla convallis sapien. Suspendisse potenti. Ut a eros at ligula vehicula pretium. Maecenas feugiat pede vel risus. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+            <div className="card">
+              <div className="card-img-container">
+                <img src={back1} className="card-img-top" alt="..." />
+                <div style={{ padding: "20px" }}>
+                  <h5 className="card-title">SiteGenie</h5>
+                  <div
+                    className="d-flex justify-content-evenly flex-wrap"
+                    style={{ marginTop: "20px" }}
+                  >
+                    <button className="btn border rounded-4">JavaScript</button>
+                    <button className="btn border rounded-4">NodeJS</button>
+                    <button className="btn border rounded-4">ExpressJS</button>
+                    <button className="btn border rounded-4">
+                      TailwindCSS
+                    </button>
+                    <button className="btn border rounded-4">OpenAI</button>
+                    <button className="btn border rounded-4">SupaBase</button>
+                    <button className="btn border rounded-4">AWS</button>
+                  </div>
+                </div>
 
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                <div className="card-img-overlay">
+                  <div className="overlay-content">
+                    <p style={infoStyles}>
+                      I played a key role in a group project developing
+                      SiteGenie, an innovative AI chatbot aimed at enhancing
+                      website interactions. Our team trained SiteGenie on
+                      user-provided links to seamlessly integrate with websites,
+                      significantly improving operational efficiency by
+                      delivering instant responses and enhancing user
+                      engagement. My primary contribution was in optimizing the
+                      frontend interface for intuitive user interaction and
+                      seamless integration with SiteGenie’s backend
+                      functionalities.
+                      
+                    </p>
 
-Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit. Morbi fringilla convallis sapien. Suspendisse potenti. Ut a eros at ligula vehicula pretium. Maecenas feugiat pede vel risus. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <a
+                      href="https://github.com/vedanti-u/SiteGenie"
+                      className="btn btn-primary"
+                      target="_blank"
+                      style={{ marginTop: "20px" }}
+                    >
+                      To Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+      <style>{`
+        .card-img-container {
+          position: relative;
+          overflow: hidden;
+        }
+        .card-img-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .overlay-content {
+          text-align: center;
+        }
+        .card:hover .card-img-overlay {
+          opacity: 1;
+        }
 
-Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit. Morbi fringilla convallis sapien. Suspendisse potenti. Ut a eros at ligula vehicula pretium. Maecenas feugiat pede vel risus. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
+        @media (max-width: 768px) {
+          .col-lg-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+      `}</style>
+    </section>
+  );
+};
 
-        </section>
-     );
-}
- 
 export default Projects;

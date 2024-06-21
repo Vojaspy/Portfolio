@@ -22,7 +22,7 @@ const textStyles = {
 
 const nameStyles = {
   color: "teal",
-  display : 'inline',
+  display: "inline",
 };
 
 const typeStyles = {
@@ -79,11 +79,17 @@ const Home = () => {
       <style>{responsiveStyles}</style>
       <div className="row">
         <div className="">
-          <h1 style={textStyles} className="textStyles d-flex justify-content-center align-items-center">
+          <h1
+            style={textStyles}
+            className="textStyles d-flex justify-content-center align-items-center"
+          >
             Hello! I am Vojas Gonnade
           </h1>
-          
-          <h3 style={typeStyles} className="typeStyles d-flex justify-content-center align-items-center">
+
+          <h3
+            style={typeStyles}
+            className="typeStyles d-flex justify-content-center align-items-center"
+          >
             I am a {""}
             <ReactTyped
               className="mx-2"
@@ -101,18 +107,27 @@ const Home = () => {
               showCursor={true}
             />
           </h3>
-          <div className="d-flex justify-content-center align-items-center aboutMeStyles" style={aboutMeStyles}>
+          <div
+            className="d-flex justify-content-center align-items-center aboutMeStyles"
+            style={aboutMeStyles}
+          >
             <span>
               A Bit About <span style={{ color: "teal" }}>Me</span>
             </span>
           </div>
-          <div className="d-flex justify-content-center align-items-center mx-auto bitStyles" style={bitStyles}>
-            Passionate web developer with a keen interest in competitive coding
-            and data science. Proficient in front-end web technologies, I thrive
-            in creating user-centric web experience. In addition to my web
-            development skills I am a competitive coding and data science
-            enthusiast, exploring data structures and algorithms and
-            methodologies to extract meaningful information from the data.
+          <div
+            className="d-flex justify-content-center align-items-center mx-auto bitStyles"
+            style={bitStyles}
+          >
+            As a passionate web developer with a keen interest in competitive
+            coding and data science, I thrive on creating user-centric web
+            experiences. Proficient in front-end web technologies, I combine
+            creativity with technical skills to craft intuitive interfaces.
+            Beyond web development, I am an avid competitive coding and data
+            science enthusiast, continuously exploring data structures,
+            algorithms, and methodologies for data analytics. I am
+            driven by the challenge of extracting meaningful insights from data
+            to inform decision-making and enhance user experiences.
           </div>
         </div>
       </div>

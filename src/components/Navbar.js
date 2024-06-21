@@ -27,6 +27,7 @@ const navStyles = {
 
 
 
+
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -148,4 +149,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 

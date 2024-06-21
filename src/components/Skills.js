@@ -134,8 +134,8 @@ const Skills = () => {
             {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/minitab/minitab-original.svg" className="img-fluid" style={imgStyles}/> */}
           
           
-            <img src={Tableau} className="img-fluid"style={imgStyles}></img>
             <img src={PowerBI} className="img-fluid"style={imgStyles}></img>
+            <img src={Tableau} className="img-fluid"style={imgStyles}></img>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="img-fluid" style={imgStyles}/>
 
             </div>

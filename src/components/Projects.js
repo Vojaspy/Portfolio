@@ -67,8 +67,7 @@ const Projects = () => {
                 <div className="card-img-overlay">
                   <div className="overlay-content">
                     <p style={infoStyles}>
-                      Welcome to my portfolio! This curated collection showcases my passion and expertise as a Computer Science student. Explore a diverse array of projects highlighting my skills in web development and data science. Each project reflects my commitment to excellence and innovation. Dive in to see how I bring creativity and technical prowess together to solve challenges and deliver impactful solutions.
-                    </p>
+                    Welcome to my portfolio! This collection showcases my passion and expertise as a Computer Science student, highlighting skills in web development and data science. Explore projects that demonstrate my commitment to excellence and innovation.</p>
                     <a href="https://github.com/Vojaspy/Portfolio" className="btn btn-primary" target="_blank" style={{ marginTop: "20px" }}>
                       To Github
                     </a>
@@ -94,7 +93,7 @@ const Projects = () => {
                 <div className="card-img-overlay">
                   <div className="overlay-content">
                     <p style={infoStyles}>
-                      Discover my deep learning project dedicated to identifying diseases in tea leaves with an impressive 80% accuracy. Utilizing powerful models such as VGG16, ResNet-50, and EfficientNet, this project showcases neural network techniques applied to agricultural diagnostics. Witness how these models effectively classify and diagnose diseases affecting tea plants, demonstrating their reliability and precision in real-world scenarios.
+                    Discover my deep learning project identifying diseases in tea leaves with 80% accuracy. Using models like VGG16, ResNet-50, and EfficientNet, this project showcases neural network techniques for agricultural diagnostics. See how these models effectively classify and diagnose diseases in tea plants, demonstrating reliability and precision.
                     </p>
                     <a href="https://github.com/Vojaspy/Deep-Learning-Project" className="btn btn-primary" target="_blank" style={{ marginTop: "20px" }}>
                       To Github
@@ -124,7 +123,7 @@ const Projects = () => {
                 <div className="card-img-overlay">
                   <div className="overlay-content">
                     <p style={infoStyles}>
-                      I played a key role in a group project developing SiteGenie, an innovative AI chatbot aimed at enhancing website interactions. Our team trained SiteGenie on user-provided links to seamlessly integrate with websites, significantly improving operational efficiency by delivering instant responses and enhancing user engagement. My primary contribution was in optimizing the frontend interface for intuitive user interaction and seamless integration with SiteGenie’s backend functionalities.
+                    I played a key role in a group project developing SiteGenie, an innovative AI chatbot aimed at enhancing website interactions. Our team trained SiteGenie on user-provided links to seamlessly integrate with websites, significantly improving operational efficiency by delivering instant responses. 
                     </p>
                     <a href="https://github.com/vedanti-u/SiteGenie" className="btn btn-primary" target="_blank" style={{ marginTop: "20px" }}>
                       To Github

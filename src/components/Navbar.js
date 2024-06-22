@@ -27,6 +27,19 @@ const navStyles = {
 
 
 
+const collapseStyles = `
+  @media (max-width: 991px) {
+    .collapse{
+      background-color: #f0f6f6;
+
+      
+    }
+    .nav-link {
+      color: brown !important;
+    }
+  }
+`;
+
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -42,6 +55,7 @@ const Navbar = () => {
 
   return (
     <section id="mynavbar">
+      <style>{collapseStyles}</style>
       <nav className="navbar navbar-expand-lg navbar-light navbar fixed-top" style={navStyles}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#mynavbar">
